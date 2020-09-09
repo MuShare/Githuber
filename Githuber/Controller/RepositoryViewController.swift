@@ -37,12 +37,25 @@ final class RepositoryViewController: BaseViewController<RepositoryViewModel> {
         return label
     }()
     
+    private lazy var headerView: UIView = {
+        let view = UIView(frame: CGRect(origin: .zero, size: CGSize(width: UIScreen.main.bounds.width, height: 100)))
+        view.addSubview(ownerAvatarImageView)
+        view.addSubview(ownerLoginLabel)
+        view.addSubview(nameLabel)
+        view.addSubview(descriptionLabel)
+        return view
+    }()
+    
+    private lazy var tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.hideFooterView()
+        tableView.tableHeaderView = headerView
+        return tableView
+    }()
+    
     override func subviews() -> [UIView] {
         return [
-            ownerAvatarImageView,
-            ownerLoginLabel,
-            nameLabel,
-            descriptionLabel
+            tableView
         ]
     }
     
@@ -56,10 +69,15 @@ final class RepositoryViewController: BaseViewController<RepositoryViewModel> {
     }
     
     override func createConstraints() {
+        tableView.snp.makeConstraints {
+            $0.left.right.bottom.equalToSuperview()
+            $0.top.equalTo(view.safeArea.top)
+        }
+        
         ownerAvatarImageView.snp.makeConstraints {
             $0.size.equalTo(30)
             $0.left.equalToSuperview().offset(15)
-            $0.top.equalTo(view.safeArea.top).offset(15)
+            $0.top.equalToSuperview().offset(15)
         }
         
         ownerLoginLabel.snp.makeConstraints {
