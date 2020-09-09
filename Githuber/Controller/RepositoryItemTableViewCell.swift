@@ -12,19 +12,21 @@ final class RepositoryItemTableViewCell: UITableViewCell {
     
     private lazy var fullNameLabel: UILabel = {
         let label = UILabel()
-        
+        label.font = .systemFont(ofSize: 16)
         return label
     }()
     
     private lazy var colorView: UIView = {
         let view = UIView()
-        
+        view.layer.cornerRadius = 4
+        view.layer.masksToBounds = true
         return view
     }()
     
     private lazy var languageLabel: UILabel = {
         let label = UILabel()
-        
+        label.font = .systemFont(ofSize: 12)
+        label.textColor = .darkText
         return label
     }()
     
@@ -43,20 +45,22 @@ final class RepositoryItemTableViewCell: UITableViewCell {
     
     private func createConstraints() {
         fullNameLabel.snp.makeConstraints {
-            $0.centerY.equalToSuperview()
+            $0.top.equalToSuperview().offset(10)
             $0.left.equalToSuperview().offset(17)
+            $0.right.equalToSuperview().inset(17)
         }
         
         colorView.snp.makeConstraints {
-            $0.size.equalTo(6)
-            $0.centerY.equalToSuperview()
-            $0.left.equalTo(fullNameLabel.snp.right).offset(5)
+            $0.size.equalTo(8)
+            $0.left.equalTo(fullNameLabel)
+            $0.top.equalTo(fullNameLabel.snp.bottom).offset(10)
+            $0.bottom.equalToSuperview().inset(10)
         }
         
         languageLabel.snp.makeConstraints {
             $0.left.equalTo(colorView.snp.right).offset(5)
-            $0.centerY.equalToSuperview()
-            $0.right.equalToSuperview()
+            $0.centerY.equalTo(colorView)
+            $0.right.equalTo(fullNameLabel)
         }
     }
     
@@ -68,6 +72,7 @@ extension RepositoryItemTableViewCell: Configurable {
     
     func configure(_ model: Model) {
         fullNameLabel.text = model.fullName
+        colorView.backgroundColor = model.languageColor
         languageLabel.text = model.language
     }
 }

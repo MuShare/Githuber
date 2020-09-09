@@ -18,7 +18,7 @@ final class SearchViewController: BaseViewController<SearchViewModel> {
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
-        tableView.rowHeight = 50
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.register(cellType: RepositoryItemTableViewCell.self)
         return tableView
     }()

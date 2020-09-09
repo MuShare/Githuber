@@ -35,6 +35,7 @@
 		BBD89FE62509008500D19E07 /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD89FE52509008500D19E07 /* SearchRepository.swift */; };
 		BBD89FE82509066000D19E07 /* RepositoryItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD89FE72509066000D19E07 /* RepositoryItemTableViewCell.swift */; };
 		BBD89FEA25090AD700D19E07 /* MoyaProvider+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD89FE925090AD700D19E07 /* MoyaProvider+Extension.swift */; };
+		BBD89FEC2509145B00D19E07 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD89FEB2509145B00D19E07 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		BBD89FE52509008500D19E07 /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
 		BBD89FE72509066000D19E07 /* RepositoryItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryItemTableViewCell.swift; sourceTree = "<group>"; };
 		BBD89FE925090AD700D19E07 /* MoyaProvider+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Extension.swift"; sourceTree = "<group>"; };
+		BBD89FEB2509145B00D19E07 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		E42CD2259901F6AD382A1E30 /* Pods-GithuberTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithuberTests.release.xcconfig"; path = "Target Support Files/Pods-GithuberTests/Pods-GithuberTests.release.xcconfig"; sourceTree = "<group>"; };
 		EBF4464FCF28FA41BC748211 /* Pods_GithuberTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithuberTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D20238749A1D2EBCD737EA /* Pods-Githuber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Githuber.release.xcconfig"; path = "Target Support Files/Pods-Githuber/Pods-Githuber.release.xcconfig"; sourceTree = "<group>"; };
@@ -227,9 +229,9 @@
 		BBD89FCC2508F6C000D19E07 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BBD89FE72509066000D19E07 /* RepositoryItemTableViewCell.swift */,
 				BBD89FCD2508F6D100D19E07 /* SearchViewController.swift */,
 				BBD89FCF2508F6D900D19E07 /* SearchViewModel.swift */,
-				BBD89FE72509066000D19E07 /* RepositoryItemTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -239,6 +241,7 @@
 			children = (
 				BBD89FD22508F89600D19E07 /* UIView+Extension.swift */,
 				BBD89FE925090AD700D19E07 /* MoyaProvider+Extension.swift */,
+				BBD89FEB2509145B00D19E07 /* UIColor+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 				BBD89FE12508FF5100D19E07 /* SearchTarget.swift in Sources */,
 				BBD89FD02508F6D900D19E07 /* SearchViewModel.swift in Sources */,
 				BBD89FCE2508F6D100D19E07 /* SearchViewController.swift in Sources */,
+				BBD89FEC2509145B00D19E07 /* UIColor+Extension.swift in Sources */,
 				BBD89FD52508F99400D19E07 /* AppLog.swift in Sources */,
 				75B1689A25088DA30060F818 /* AppFlow.swift in Sources */,
 				75B1689C25088E170060F818 /* SearchFlow.swift in Sources */,
