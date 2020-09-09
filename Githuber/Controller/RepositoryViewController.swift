@@ -38,7 +38,7 @@ final class RepositoryViewController: BaseViewController<RepositoryViewModel> {
     }()
     
     private lazy var headerView: UIView = {
-        let view = UIView(frame: CGRect(origin: .zero, size: CGSize(width: UIScreen.main.bounds.width, height: 100)))
+        let view = UIView(frame: CGRect(origin: .zero, size: CGSize(width: UIScreen.main.bounds.width, height: 140)))
         view.addSubview(ownerAvatarImageView)
         view.addSubview(ownerLoginLabel)
         view.addSubview(nameLabel)
@@ -50,8 +50,12 @@ final class RepositoryViewController: BaseViewController<RepositoryViewModel> {
         let tableView = UITableView()
         tableView.hideFooterView()
         tableView.tableHeaderView = headerView
+        tableView.rowHeight = 60
+        tableView.register(cellType: SelectionTableViewCell.self)
         return tableView
     }()
+    
+    private lazy var dataSource = SelectionTableViewCell.tableViewSingleSectionDataSource()
     
     override func subviews() -> [UIView] {
         return [
@@ -64,7 +68,8 @@ final class RepositoryViewController: BaseViewController<RepositoryViewModel> {
             viewModel.ownerAvatar ~> ownerAvatarImageView.kf.rx.image,
             viewModel.ownerLogin ~> ownerLoginLabel.rx.text,
             viewModel.fullName ~> nameLabel.rx.text,
-            viewModel.descriptionString ~> descriptionLabel.rx.text
+            viewModel.descriptionString ~> descriptionLabel.rx.text,
+            viewModel.selectionSelection ~> tableView.rx.items(dataSource: dataSource)
         ]
     }
     
