@@ -10,7 +10,7 @@ import RxFlow
 
 enum SearchStep: Step {
     case start
-    case result
+    case repository(RepositoryItem)
 }
 
 class SearchFlow: Flow {
@@ -21,6 +21,10 @@ class SearchFlow: Flow {
     
     private lazy var searchViewController = SearchViewController(viewModel: .init())
     
+    private var navigationController: UINavigationController? {
+        searchViewController.navigationController
+    }
+    
     func navigate(to step: Step) -> FlowContributors {
         guard let searchStep = step as? SearchStep else {
             return .none
@@ -28,7 +32,9 @@ class SearchFlow: Flow {
         switch searchStep {
         case .start:
             return .viewController(searchViewController)
-        case .result:
+        case .repository(let item):
+            let repositoryViewController = RepositoryViewController(viewModel: .init(item: item))
+            navigationController?.pushViewController(repositoryViewController, animated: true)
             return .none
         }
     }

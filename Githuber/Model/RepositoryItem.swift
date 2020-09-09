@@ -9,10 +9,16 @@
 class RepositoryItem: Codable {
     let fullName: String?
     let language: String?
+    let description: String?
+    let owner: Owner
+    let name: String?
     
     private enum CodingKeys: String, CodingKey {
         case fullName = "full_name"
         case language
+        case description
+        case owner
+        case name
     }
 }
 

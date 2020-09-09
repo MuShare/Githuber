@@ -45,4 +45,11 @@ final class SearchViewModel: BaseViewModel {
             SingleSection.create($0)
         }
     }
+    
+    func pick(at index: Int) {
+        guard repositoryItems.value.isSafe(for: index) else {
+            return
+        }
+        steps.accept(SearchStep.repository(repositoryItems.value[index]))
+    }
 }
