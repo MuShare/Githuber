@@ -16,7 +16,7 @@ enum AppStep: Step {
 class AppFlow: Flow {
     
     var root: Presentable {
-        return rootWindow
+        rootWindow
     }
     
     private let rootWindow: UIWindow
@@ -41,7 +41,7 @@ class AppFlow: Flow {
         case .search:
             let search = SearchFlow()
             Flows.use(search, when: .ready) {
-                self.navigationController.pushViewController($0, animated: false)
+                self.navigationController.viewControllers = [$0]
             }
             return .flow(search, with: SearchStep.start)
         }

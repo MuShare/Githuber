@@ -16,14 +16,21 @@ enum SearchStep: Step {
 class SearchFlow: Flow {
     
     var root: Presentable {
-        UIViewController()
+        searchViewController
     }
+    
+    private lazy var searchViewController = SearchViewController(viewModel: .init())
     
     func navigate(to step: Step) -> FlowContributors {
         guard let searchStep = step as? SearchStep else {
             return .none
         }
-        
-        return .none
+        switch searchStep {
+        case .start:
+            return .viewController(searchViewController)
+        case .result:
+            return .none
+        }
     }
+    
 }
