@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,11 @@
 		75B16877250885CA0060F818 /* GithuberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B16876250885CA0060F818 /* GithuberTests.swift */; };
 		75B16882250885CA0060F818 /* GithuberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B16881250885CA0060F818 /* GithuberUITests.swift */; };
 		75B16890250886DA0060F818 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1688F250886DA0060F818 /* ViewController2.swift */; };
+		75B1689625088D050060F818 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1689525088D050060F818 /* BaseViewController.swift */; };
+		75B1689825088D730060F818 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1689725088D730060F818 /* BaseViewModel.swift */; };
+		75B1689A25088DA30060F818 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1689925088DA30060F818 /* AppFlow.swift */; };
+		75B1689C25088E170060F818 /* SearchFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1689B25088E170060F818 /* SearchFlow.swift */; };
+		75B1689E25088EC20060F818 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1689D25088EC20060F818 /* Global.swift */; };
 		A854A17D7D60DD9D30FBC321 /* Pods_GithuberTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF4464FCF28FA41BC748211 /* Pods_GithuberTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +59,11 @@
 		75B16881250885CA0060F818 /* GithuberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithuberUITests.swift; sourceTree = "<group>"; };
 		75B16883250885CA0060F818 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75B1688F250886DA0060F818 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		75B1689525088D050060F818 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		75B1689725088D730060F818 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		75B1689925088DA30060F818 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
+		75B1689B25088E170060F818 /* SearchFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlow.swift; sourceTree = "<group>"; };
+		75B1689D25088EC20060F818 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		B84369B7BC66292579FB98E0 /* Pods_Githuber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Githuber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E42CD2259901F6AD382A1E30 /* Pods-GithuberTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithuberTests.release.xcconfig"; path = "Target Support Files/Pods-GithuberTests/Pods-GithuberTests.release.xcconfig"; sourceTree = "<group>"; };
 		EBF4464FCF28FA41BC748211 /* Pods_GithuberTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithuberTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,7 +106,6 @@
 				4809F7088EE9825762E622E1 /* Pods-GithuberTests.debug.xcconfig */,
 				E42CD2259901F6AD382A1E30 /* Pods-GithuberTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -134,6 +143,10 @@
 		75B1685E250885C80060F818 /* Githuber */ = {
 			isa = PBXGroup;
 			children = (
+				75B1689425088CA70060F818 /* Library */,
+				75B1689325088C980060F818 /* Extension */,
+				75B1689225088C8F0060F818 /* Flow */,
+				75B1689125088C840060F818 /* Controller */,
 				75B1685F250885C80060F818 /* AppDelegate.swift */,
 				75B16861250885C80060F818 /* SceneDelegate.swift */,
 				75B16863250885C80060F818 /* ViewController.swift */,
@@ -162,6 +175,39 @@
 				75B16883250885CA0060F818 /* Info.plist */,
 			);
 			path = GithuberUITests;
+			sourceTree = "<group>";
+		};
+		75B1689125088C840060F818 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		75B1689225088C8F0060F818 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				75B1689925088DA30060F818 /* AppFlow.swift */,
+				75B1689B25088E170060F818 /* SearchFlow.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		75B1689325088C980060F818 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		75B1689425088CA70060F818 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				75B1689525088D050060F818 /* BaseViewController.swift */,
+				75B1689725088D730060F818 /* BaseViewModel.swift */,
+				75B1689D25088EC20060F818 /* Global.swift */,
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,10 +408,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75B1689A25088DA30060F818 /* AppFlow.swift in Sources */,
+				75B1689C25088E170060F818 /* SearchFlow.swift in Sources */,
+				75B1689625088D050060F818 /* BaseViewController.swift in Sources */,
 				75B16864250885C80060F818 /* ViewController.swift in Sources */,
 				75B16890250886DA0060F818 /* ViewController2.swift in Sources */,
 				75B16860250885C80060F818 /* AppDelegate.swift in Sources */,
 				75B16862250885C80060F818 /* SceneDelegate.swift in Sources */,
+				75B1689825088D730060F818 /* BaseViewModel.swift in Sources */,
+				75B1689E25088EC20060F818 /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
