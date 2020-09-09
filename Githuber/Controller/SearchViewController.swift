@@ -10,16 +10,17 @@ import RxSwift
 
 final class SearchViewController: BaseViewController<SearchViewModel> {
     
-    private lazy var searchBar: UISearchBar = {
-        let searchBar = UISearchBar()
-        
-        return searchBar
-    }()
+    private lazy var searchBar = UISearchBar()
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
+        tableView.hideFooterView()
         tableView.rowHeight = UITableView.automaticDimension
         tableView.register(cellType: RepositoryItemTableViewCell.self)
+        tableView.rx.itemSelected.bind { [unowned self] in
+            tableView.deselectRow(at: $0, animated: true)
+            self.viewModel.pick(at: $0.row)
+        }.disposed(by: disposeBag)
         return tableView
     }()
     

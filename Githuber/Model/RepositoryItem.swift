@@ -9,10 +9,24 @@
 class RepositoryItem: Codable {
     let fullName: String?
     let language: String?
+    let description: String?
+    let owner: Owner
+    let name: String?
+    let stargazersCount: Int?
+    let forksCount: Int?
+    let watchersCount: Int?
+    let openIssuesCount: Int?
     
     private enum CodingKeys: String, CodingKey {
         case fullName = "full_name"
         case language
+        case description
+        case owner
+        case name
+        case stargazersCount = "stargazers_count"
+        case forksCount = "forks_count"
+        case openIssuesCount = "open_issues_count"
+        case watchersCount = "watchers_count"
     }
 }
 

@@ -6,4 +6,12 @@
 //  Copyright © 2020 Meng Li. All rights reserved.
 //
 
-import Foundation
+class Owner: Codable {
+    let login: String?
+    let avatarUrl: String?
+    
+    private enum CodingKeys: String, CodingKey {
+        case login
+        case avatarUrl = "avatar_url"
+    }
+}
