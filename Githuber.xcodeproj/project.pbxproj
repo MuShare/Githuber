@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B319F2DE39A8C39CCE82430 /* Pods_Githuber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B84369B7BC66292579FB98E0 /* Pods_Githuber.framework */; };
 		75B16860250885C80060F818 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1685F250885C80060F818 /* AppDelegate.swift */; };
 		75B16862250885C80060F818 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B16861250885C80060F818 /* SceneDelegate.swift */; };
 		75B16864250885C80060F818 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B16863250885C80060F818 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 		75B16877250885CA0060F818 /* GithuberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B16876250885CA0060F818 /* GithuberTests.swift */; };
 		75B16882250885CA0060F818 /* GithuberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B16881250885CA0060F818 /* GithuberUITests.swift */; };
 		75B16890250886DA0060F818 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1688F250886DA0060F818 /* ViewController2.swift */; };
+		A854A17D7D60DD9D30FBC321 /* Pods_GithuberTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF4464FCF28FA41BC748211 /* Pods_GithuberTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4809F7088EE9825762E622E1 /* Pods-GithuberTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithuberTests.debug.xcconfig"; path = "Target Support Files/Pods-GithuberTests/Pods-GithuberTests.debug.xcconfig"; sourceTree = "<group>"; };
 		75B1685C250885C80060F818 /* Githuber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Githuber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B1685F250885C80060F818 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75B16861250885C80060F818 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +54,11 @@
 		75B16881250885CA0060F818 /* GithuberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithuberUITests.swift; sourceTree = "<group>"; };
 		75B16883250885CA0060F818 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75B1688F250886DA0060F818 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		B84369B7BC66292579FB98E0 /* Pods_Githuber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Githuber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E42CD2259901F6AD382A1E30 /* Pods-GithuberTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithuberTests.release.xcconfig"; path = "Target Support Files/Pods-GithuberTests/Pods-GithuberTests.release.xcconfig"; sourceTree = "<group>"; };
+		EBF4464FCF28FA41BC748211 /* Pods_GithuberTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithuberTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0D20238749A1D2EBCD737EA /* Pods-Githuber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Githuber.release.xcconfig"; path = "Target Support Files/Pods-Githuber/Pods-Githuber.release.xcconfig"; sourceTree = "<group>"; };
+		FAE1DCF05117B0F6021067C9 /* Pods-Githuber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Githuber.debug.xcconfig"; path = "Target Support Files/Pods-Githuber/Pods-Githuber.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B319F2DE39A8C39CCE82430 /* Pods_Githuber.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A854A17D7D60DD9D30FBC321 /* Pods_GithuberTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +88,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06567586930AD46EC6917FA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FAE1DCF05117B0F6021067C9 /* Pods-Githuber.debug.xcconfig */,
+				F0D20238749A1D2EBCD737EA /* Pods-Githuber.release.xcconfig */,
+				4809F7088EE9825762E622E1 /* Pods-GithuberTests.debug.xcconfig */,
+				E42CD2259901F6AD382A1E30 /* Pods-GithuberTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6220665F39C09A7DCB952784 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B84369B7BC66292579FB98E0 /* Pods_Githuber.framework */,
+				EBF4464FCF28FA41BC748211 /* Pods_GithuberTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		75B16853250885C80060F818 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +116,8 @@
 				75B16875250885CA0060F818 /* GithuberTests */,
 				75B16880250885CA0060F818 /* GithuberUITests */,
 				75B1685D250885C80060F818 /* Products */,
+				06567586930AD46EC6917FA5 /* Pods */,
+				6220665F39C09A7DCB952784 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75B16886250885CA0060F818 /* Build configuration list for PBXNativeTarget "Githuber" */;
 			buildPhases = (
+				C0F440F0860C5D7BB48251A1 /* [CP] Check Pods Manifest.lock */,
 				75B16858250885C80060F818 /* Sources */,
 				75B16859250885C80060F818 /* Frameworks */,
 				75B1685A250885C80060F818 /* Resources */,
+				9D18CD537404ED92866FBB7E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +190,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75B16889250885CA0060F818 /* Build configuration list for PBXNativeTarget "GithuberTests" */;
 			buildPhases = (
+				39F4873BDAF2EC03AA0A309D /* [CP] Check Pods Manifest.lock */,
 				75B1686E250885CA0060F818 /* Sources */,
 				75B1686F250885CA0060F818 /* Frameworks */,
 				75B16870250885CA0060F818 /* Resources */,
@@ -256,6 +292,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39F4873BDAF2EC03AA0A309D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GithuberTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D18CD537404ED92866FBB7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Githuber/Pods-Githuber-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Githuber/Pods-Githuber-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Githuber/Pods-Githuber-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0F440F0860C5D7BB48251A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Githuber-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		75B16858250885C80060F818 /* Sources */ = {
@@ -436,6 +536,7 @@
 		};
 		75B16887250885CA0060F818 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAE1DCF05117B0F6021067C9 /* Pods-Githuber.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -453,6 +554,7 @@
 		};
 		75B16888250885CA0060F818 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0D20238749A1D2EBCD737EA /* Pods-Githuber.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +572,7 @@
 		};
 		75B1688A250885CA0060F818 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4809F7088EE9825762E622E1 /* Pods-GithuberTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +594,7 @@
 		};
 		75B1688B250885CA0060F818 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E42CD2259901F6AD382A1E30 /* Pods-GithuberTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
