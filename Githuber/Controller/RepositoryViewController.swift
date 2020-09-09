@@ -31,6 +31,20 @@ final class RepositoryViewController: BaseViewController<RepositoryViewModel> {
         return label
     }()
     
+    private lazy var colorView: UIView = {
+        let view = UIView()
+        view.layer.cornerRadius = 4
+        view.layer.masksToBounds = true
+        return view
+    }()
+    
+    private lazy var languageLabel: UILabel = {
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 12)
+        label.textColor = .darkText
+        return label
+    }()
+    
     private lazy var descriptionLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 16)
@@ -38,10 +52,12 @@ final class RepositoryViewController: BaseViewController<RepositoryViewModel> {
     }()
     
     private lazy var headerView: UIView = {
-        let view = UIView(frame: CGRect(origin: .zero, size: CGSize(width: UIScreen.main.bounds.width, height: 140)))
+        let view = UIView(frame: CGRect(origin: .zero, size: CGSize(width: UIScreen.main.bounds.width, height: 160)))
         view.addSubview(ownerAvatarImageView)
         view.addSubview(ownerLoginLabel)
         view.addSubview(nameLabel)
+        view.addSubview(colorView)
+        view.addSubview(languageLabel)
         view.addSubview(descriptionLabel)
         return view
     }()
@@ -67,7 +83,9 @@ final class RepositoryViewController: BaseViewController<RepositoryViewModel> {
         return [
             viewModel.ownerAvatar ~> ownerAvatarImageView.kf.rx.image,
             viewModel.ownerLogin ~> ownerLoginLabel.rx.text,
-            viewModel.fullName ~> nameLabel.rx.text,
+            viewModel.name ~> nameLabel.rx.text,
+            viewModel.languageColor ~> colorView.rx.backgroundColor,
+            viewModel.language ~> languageLabel.rx.text,
             viewModel.descriptionString ~> descriptionLabel.rx.text,
             viewModel.selectionSelection ~> tableView.rx.items(dataSource: dataSource)
         ]
@@ -97,9 +115,21 @@ final class RepositoryViewController: BaseViewController<RepositoryViewModel> {
             $0.right.equalToSuperview().inset(15)
         }
         
+        colorView.snp.makeConstraints {
+            $0.size.equalTo(8)
+            $0.left.equalTo(nameLabel)
+            $0.top.equalTo(nameLabel.snp.bottom).offset(10)
+        }
+        
+        languageLabel.snp.makeConstraints {
+            $0.left.equalTo(colorView.snp.right).offset(5)
+            $0.centerY.equalTo(colorView)
+            $0.right.equalToSuperview().offset(15)
+        }
+        
         descriptionLabel.snp.makeConstraints {
             $0.left.equalToSuperview().offset(15)
-            $0.top.equalTo(nameLabel.snp.bottom).offset(10)
+            $0.top.equalTo(colorView.snp.bottom).offset(15)
             $0.right.equalToSuperview().inset(15)
         }
     }

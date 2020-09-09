@@ -70,8 +70,16 @@ final class RepositoryViewModel: BaseViewModel {
         repositoryItem.map { $0.owner.login }
     }
     
-    var fullName: Observable<String?> {
+    var name: Observable<String?> {
         repositoryItem.map { $0.name }
+    }
+    
+    var languageColor: Observable<UIColor> {
+        repositoryItem.map { $0.languageColor }
+    }
+    
+    var language: Observable<String?> {
+        repositoryItem.map { $0.language}
     }
     
     var descriptionString: Observable<String?> {
