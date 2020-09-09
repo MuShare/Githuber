@@ -18,9 +18,18 @@ final class SearchViewController: BaseViewController<SearchViewModel> {
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
-        
+        tableView.rowHeight = 50
+        tableView.register(cellType: RepositoryItemTableViewCell.self)
         return tableView
     }()
+    
+    private lazy var dataSource = RepositoryItemTableViewCell.tableViewSingleSectionDataSource()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        viewModel.observeKeyword()
+    }
     
     override func subviews() -> [UIView] {
         return [
@@ -31,7 +40,9 @@ final class SearchViewController: BaseViewController<SearchViewModel> {
     
     override func bind() -> [Disposable] {
         return [
-            viewModel.title ~> rx.title
+            viewModel.title ~> rx.title,
+            viewModel.keyword <~> searchBar.rx.value,
+            viewModel.repositoryItemSection ~> tableView.rx.items(dataSource: dataSource)
         ]
     }
     
