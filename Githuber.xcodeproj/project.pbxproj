@@ -32,6 +32,7 @@
 		BB78D67F250A760B004D2507 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78D67E250A760B004D2507 /* MockData.swift */; };
 		BB78D680250A7991004D2507 /* search_repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = BB6DABFA250A36B8000D7948 /* search_repositories.json */; };
 		BB78D683250A7A5A004D2507 /* MoyaProvider+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78D682250A7A5A004D2507 /* MoyaProvider+Mock.swift */; };
+		BB78D686250A7F27004D2507 /* XCUIApplication+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78D685250A7F27004D2507 /* XCUIApplication+Mock.swift */; };
 		BBD89FCE2508F6D100D19E07 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD89FCD2508F6D100D19E07 /* SearchViewController.swift */; };
 		BBD89FD02508F6D900D19E07 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD89FCF2508F6D900D19E07 /* SearchViewModel.swift */; };
 		BBD89FD32508F89600D19E07 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD89FD22508F89600D19E07 /* UIView+Extension.swift */; };
@@ -127,6 +128,7 @@
 		BB78D67C250A75BE004D2507 /* SearchTargetMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTargetMockData.swift; sourceTree = "<group>"; };
 		BB78D67E250A760B004D2507 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		BB78D682250A7A5A004D2507 /* MoyaProvider+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Mock.swift"; sourceTree = "<group>"; };
+		BB78D685250A7F27004D2507 /* XCUIApplication+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIApplication+Mock.swift"; sourceTree = "<group>"; };
 		BBD89FCD2508F6D100D19E07 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		BBD89FCF2508F6D900D19E07 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		BBD89FD22508F89600D19E07 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 		75B16880250885CA0060F818 /* GithuberUITests */ = {
 			isa = PBXGroup;
 			children = (
+				BB78D684250A7EB6004D2507 /* Library */,
 				BB78D653250A535E004D2507 /* Controller */,
 				75B16881250885CA0060F818 /* GithuberUITests.swift */,
 				75B16883250885CA0060F818 /* Info.plist */,
@@ -350,6 +353,14 @@
 			children = (
 				BB78D67E250A760B004D2507 /* MockData.swift */,
 				BB78D682250A7A5A004D2507 /* MoyaProvider+Mock.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		BB78D684250A7EB6004D2507 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				BB78D685250A7F27004D2507 /* XCUIApplication+Mock.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -759,6 +770,7 @@
 			files = (
 				BB78D652250A5358004D2507 /* SearchUITests.swift in Sources */,
 				75B16882250885CA0060F818 /* GithuberUITests.swift in Sources */,
+				BB78D686250A7F27004D2507 /* XCUIApplication+Mock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

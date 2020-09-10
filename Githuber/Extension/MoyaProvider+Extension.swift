@@ -11,11 +11,11 @@ import Moya
 extension MoyaProvider {
     
     static func withNetworkLoggerPlugin(otherPlugins: [PluginType] = []) -> MoyaProvider {
-//        #if DEBUG
-//        return MoyaProvider<Target>(plugins: [NetworkLoggerPlugin.init(configuration: .init(logOptions: .verbose))] + otherPlugins)
-//        #else
+        #if DEBUG
+        return MoyaProvider<Target>(plugins: [NetworkLoggerPlugin.init(configuration: .init(logOptions: .verbose))] + otherPlugins)
+        #else
         return MoyaProvider<Target>(plugins: otherPlugins)
-//        #endif
+        #endif
     }
     
 }

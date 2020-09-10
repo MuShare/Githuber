@@ -11,7 +11,7 @@ import XCTest
 
 class SearchUITests: XCTestCase {
     
-    private let app = XCUIApplication()
+    private let app = XCUIApplication.mockApp
     
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -26,7 +26,7 @@ class SearchUITests: XCTestCase {
         sleep(1)
         searchBar.typeText("RxAlertViewable")
         app.buttons["Search"].tap()
-        sleep(5)
+        sleep(1)
     }
     
     override func tearDownWithError() throws {

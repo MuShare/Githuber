@@ -12,7 +12,13 @@ import RxSwift
 
 class BaseRepository<Target: TargetType> {
     
-    var provider = MoyaProvider<Target>.withNetworkLoggerPlugin(otherPlugins: [])
+    var provider: MoyaProvider<Target> = {
+        if CommandLine.arguments.contains("test") {
+            return MoyaProvider<Target>.mockProvider()
+        } else {
+            return MoyaProvider<Target>.withNetworkLoggerPlugin(otherPlugins: [])
+        }
+    }()
 
     func mock() {
         provider = MoyaProvider<Target>.mockProvider()
