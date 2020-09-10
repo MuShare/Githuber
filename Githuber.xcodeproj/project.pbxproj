@@ -22,6 +22,9 @@
 		75B1689C25088E170060F818 /* SearchFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1689B25088E170060F818 /* SearchFlow.swift */; };
 		75B1689E25088EC20060F818 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1689D25088EC20060F818 /* Global.swift */; };
 		A854A17D7D60DD9D30FBC321 /* Pods_GithuberTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF4464FCF28FA41BC748211 /* Pods_GithuberTests.framework */; };
+		BB6DABF8250A3101000D7948 /* SearchRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6DABF7250A3101000D7948 /* SearchRepositoryTest.swift */; };
+		BB6DABFB250A36B8000D7948 /* search_repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = BB6DABFA250A36B8000D7948 /* search_repositories.json */; };
+		BB6DABFE250A4AC9000D7948 /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6DABFD250A4AC9000D7948 /* Stub.swift */; };
 		BBD89FCE2508F6D100D19E07 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD89FCD2508F6D100D19E07 /* SearchViewController.swift */; };
 		BBD89FD02508F6D900D19E07 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD89FCF2508F6D900D19E07 /* SearchViewModel.swift */; };
 		BBD89FD32508F89600D19E07 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD89FD22508F89600D19E07 /* UIView+Extension.swift */; };
@@ -85,6 +88,9 @@
 		75B1689B25088E170060F818 /* SearchFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlow.swift; sourceTree = "<group>"; };
 		75B1689D25088EC20060F818 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		B84369B7BC66292579FB98E0 /* Pods_Githuber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Githuber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB6DABF7250A3101000D7948 /* SearchRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryTest.swift; sourceTree = "<group>"; };
+		BB6DABFA250A36B8000D7948 /* search_repositories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = search_repositories.json; sourceTree = "<group>"; };
+		BB6DABFD250A4AC9000D7948 /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
 		BBD89FCD2508F6D100D19E07 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		BBD89FCF2508F6D900D19E07 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		BBD89FD22508F89600D19E07 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
@@ -208,6 +214,9 @@
 		75B16875250885CA0060F818 /* GithuberTests */ = {
 			isa = PBXGroup;
 			children = (
+				BB6DABFC250A4AB7000D7948 /* Library */,
+				BB6DABF9250A3642000D7948 /* MockData */,
+				BB6DABF6250A30E6000D7948 /* Repository */,
 				75B16876250885CA0060F818 /* GithuberTests.swift */,
 				75B16878250885CA0060F818 /* Info.plist */,
 			);
@@ -240,6 +249,30 @@
 				75B1689525088D050060F818 /* BaseViewController.swift */,
 				75B1689725088D730060F818 /* BaseViewModel.swift */,
 				75B1689D25088EC20060F818 /* Global.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		BB6DABF6250A30E6000D7948 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				BB6DABF7250A3101000D7948 /* SearchRepositoryTest.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		BB6DABF9250A3642000D7948 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				BB6DABFA250A36B8000D7948 /* search_repositories.json */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		BB6DABFC250A4AB7000D7948 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				BB6DABFD250A4AC9000D7948 /* Stub.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -328,6 +361,7 @@
 				75B1686E250885CA0060F818 /* Sources */,
 				75B1686F250885CA0060F818 /* Frameworks */,
 				75B16870250885CA0060F818 /* Resources */,
+				E400CF6B0E72C0844956E383 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -416,6 +450,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB6DABFB250A36B8000D7948 /* search_repositories.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +545,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E400CF6B0E72C0844956E383 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GithuberTests/Pods-GithuberTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GithuberTests/Pods-GithuberTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GithuberTests/Pods-GithuberTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -554,6 +606,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				75B16877250885CA0060F818 /* GithuberTests.swift in Sources */,
+				BB6DABFE250A4AC9000D7948 /* Stub.swift in Sources */,
+				BB6DABF8250A3101000D7948 /* SearchRepositoryTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
