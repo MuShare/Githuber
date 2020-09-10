@@ -24,6 +24,7 @@
 		BB6DABF8250A3101000D7948 /* SearchRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6DABF7250A3101000D7948 /* SearchRepositoryTests.swift */; };
 		BB6DABFB250A36B8000D7948 /* search_repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = BB6DABFA250A36B8000D7948 /* search_repositories.json */; };
 		BB6DABFE250A4AC9000D7948 /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6DABFD250A4AC9000D7948 /* Stub.swift */; };
+		BB78D652250A5358004D2507 /* SearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78D651250A5358004D2507 /* SearchUITests.swift */; };
 		BBD89FCE2508F6D100D19E07 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD89FCD2508F6D100D19E07 /* SearchViewController.swift */; };
 		BBD89FD02508F6D900D19E07 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD89FCF2508F6D900D19E07 /* SearchViewModel.swift */; };
 		BBD89FD32508F89600D19E07 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD89FD22508F89600D19E07 /* UIView+Extension.swift */; };
@@ -89,6 +90,7 @@
 		BB6DABF7250A3101000D7948 /* SearchRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryTests.swift; sourceTree = "<group>"; };
 		BB6DABFA250A36B8000D7948 /* search_repositories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = search_repositories.json; sourceTree = "<group>"; };
 		BB6DABFD250A4AC9000D7948 /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
+		BB78D651250A5358004D2507 /* SearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUITests.swift; sourceTree = "<group>"; };
 		BBD89FCD2508F6D100D19E07 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		BBD89FCF2508F6D900D19E07 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		BBD89FD22508F89600D19E07 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 		75B16880250885CA0060F818 /* GithuberUITests */ = {
 			isa = PBXGroup;
 			children = (
+				BB78D653250A535E004D2507 /* Controller */,
 				75B16881250885CA0060F818 /* GithuberUITests.swift */,
 				75B16883250885CA0060F818 /* Info.plist */,
 			);
@@ -272,6 +275,14 @@
 				BB6DABFD250A4AC9000D7948 /* Stub.swift */,
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		BB78D653250A535E004D2507 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BB78D651250A5358004D2507 /* SearchUITests.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		BBD89FCC2508F6C000D19E07 /* Controller */ = {
@@ -611,6 +622,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB78D652250A5358004D2507 /* SearchUITests.swift in Sources */,
 				75B16882250885CA0060F818 /* GithuberUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

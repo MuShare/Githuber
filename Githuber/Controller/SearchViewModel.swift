@@ -25,7 +25,7 @@ final class SearchViewModel: BaseViewModel {
             .compactMap { $0 }
             .filter { !$0.isEmpty }
             .distinctUntilChanged().debug()
-            .throttle(.seconds(1), scheduler: MainScheduler.instance)
+            .throttle(.milliseconds(50), scheduler: MainScheduler.instance)
             .flatMapLatest { SearchManager.shared.searchRepo(keyword: $0) }.debug()
             .asDriver(onErrorJustReturn: [])
             .drive(repositoryItems)

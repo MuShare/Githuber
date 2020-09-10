@@ -6,6 +6,9 @@
   Copyright © 2020 Meng Li. All rights reserved.
 */
 
+// SearchViewController
+search_bar_placeholder = "Search Github Repository";
+
 // RepositoryViewController
 repository_stars = "Stars";
 repository_forks = "Forks";

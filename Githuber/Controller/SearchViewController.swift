@@ -10,7 +10,11 @@ import RxSwift
 
 final class SearchViewController: BaseViewController<SearchViewModel> {
     
-    private lazy var searchBar = UISearchBar()
+    private lazy var searchBar: UISearchBar = {
+        let searchBar = UISearchBar()
+        searchBar.placeholder = R.string.localizable.search_bar_placeholder()
+        return searchBar
+    }()
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
