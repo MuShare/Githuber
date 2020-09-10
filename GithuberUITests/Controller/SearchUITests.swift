@@ -25,8 +25,8 @@ class SearchUITests: XCTestCase {
         searchBar.tap()
         sleep(1)
         searchBar.typeText("RxAlertViewable")
+        app.buttons["Search"].tap()
         sleep(5)
-        
     }
     
     override func tearDownWithError() throws {
