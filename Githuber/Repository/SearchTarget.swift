@@ -6,6 +6,7 @@
 //  Copyright © 2020 Meng Li. All rights reserved.
 //
 
+import GithuberMockData
 import Moya
 
 enum SearchTarget {
@@ -33,7 +34,10 @@ extension SearchTarget: TargetType {
     }
     
     var sampleData: Data {
-         Data()
+        switch self {
+        case .searchRepo:
+            return SearchTargetMockData.searchRepositories
+        }
     }
     
     var task: Task {

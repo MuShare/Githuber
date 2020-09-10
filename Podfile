@@ -20,10 +20,11 @@ target 'Githuber' do
 
         pod 'RxBlocking'
     end
-
 end
 
-
+target 'GithuberMockData' do
+   pod 'Moya/RxSwift' 
+end
 
 post_install do |installer|
     system("bash #{Pathname(installer.sandbox.root)}/RxController/rxtree/build_for_xcode.sh")

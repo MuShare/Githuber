@@ -6,6 +6,7 @@
 //  Copyright © 2020 Meng Li. All rights reserved.
 //
 
+import GithuberMockData
 import Moya
 import RxSwift
 
@@ -13,4 +14,8 @@ class BaseRepository<Target: TargetType> {
     
     var provider = MoyaProvider<Target>.withNetworkLoggerPlugin(otherPlugins: [])
 
+    func mock() {
+        provider = MoyaProvider<Target>.mockProvider()
+    }
+    
 }
