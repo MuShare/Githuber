@@ -1,5 +1,5 @@
 //
-//  SearchRepositoryTest.swift
+//  SearchRepositoryTests.swift
 //  GithuberTests
 //
 //  Created by Meng Li on 2020/9/10.
@@ -11,7 +11,7 @@ import RxBlocking
 import XCTest
 @testable import Githuber
 
-class SearchRepositoryTest: BaseTestCase {
+class SearchRepositoryTests: BaseTestCase {
 
     override func setUp() {
         super.setUp()
