@@ -17,8 +17,13 @@ target 'Githuber' do
 
     target 'GithuberTests' do
         inherit! :search_paths
+
+        pod 'RxBlocking'
     end
+
 end
+
+
 
 post_install do |installer|
     system("bash #{Pathname(installer.sandbox.root)}/RxController/rxtree/build_for_xcode.sh")

@@ -28,6 +28,18 @@ class RepositoryItem: Codable {
         case openIssuesCount = "open_issues_count"
         case watchersCount = "watchers_count"
     }
+    
+    public init(fullName: String?, language: String?, description: String?, owner: Owner, name: String?, stargazersCount: Int?, forksCount: Int?, watchersCount: Int?, openIssuesCount: Int?) {
+        self.fullName = fullName
+        self.language = language
+        self.description = description
+        self.owner = owner
+        self.name = name
+        self.stargazersCount = stargazersCount
+        self.forksCount = forksCount
+        self.watchersCount = watchersCount
+        self.openIssuesCount = openIssuesCount
+    }
 }
 
 extension RepositoryItem {
@@ -237,5 +249,19 @@ extension RepositoryItem {
             return .lightGray
         }
         return UIColor(hex: colorValue)
+    }
+}
+
+extension RepositoryItem: Equatable {
+    static func == (lhs: RepositoryItem, rhs: RepositoryItem) -> Bool {
+        return lhs.fullName == rhs.fullName
+            && lhs.language == rhs.language
+            && lhs.description == rhs.description
+            && lhs.owner == rhs.owner
+            && lhs.name == rhs.name
+            && lhs.stargazersCount == rhs.stargazersCount
+            && lhs.forksCount == rhs.forksCount
+            && lhs.watchersCount == rhs.watchersCount
+            && lhs.openIssuesCount == rhs.openIssuesCount
     }
 }

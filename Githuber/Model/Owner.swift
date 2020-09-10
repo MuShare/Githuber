@@ -14,4 +14,15 @@ class Owner: Codable {
         case login
         case avatarUrl = "avatar_url"
     }
+    
+    public init(login: String?, avatarUrl: String?) {
+        self.login = login
+        self.avatarUrl = avatarUrl
+    }
+}
+
+extension Owner: Equatable {
+    static func == (lhs: Owner, rhs: Owner) -> Bool {
+        return lhs.login == rhs.login && lhs.avatarUrl == rhs.avatarUrl
+    }
 }
