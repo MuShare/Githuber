@@ -10,15 +10,13 @@ import Moya
 import RxBlocking
 import XCTest
 @testable import Githuber
+import GithuberMockData
 
-class SearchRepositoryTests: BaseTestCase {
+class SearchRepositoryTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
         
-        guard let data = getMockData(name: "search_repositories") else {
-            fatalError("Mock data not found.")
-        }
         SearchRepository.shared.provider = MoyaProvider<SearchTarget>(
             endpointClosure: { target in
                 let url = target.baseURL.appendingPathComponent(target.path).absoluteString
@@ -27,7 +25,7 @@ class SearchRepositoryTests: BaseTestCase {
                     return Endpoint(
                         url: url,
                         sampleResponseClosure: {
-                            .networkResponse(200, data)
+                            .networkResponse(200, SearchTargetMockData.searchRepositories)
                         },
                         method: target.method,
                         task: target.task,
