@@ -6,46 +6,16 @@
 //  Copyright © 2020 Meng Li. All rights reserved.
 //
 
-import Moya
 import RxBlocking
 import XCTest
 @testable import Githuber
 
-class SearchRepositoryTests: BaseTestCase {
+class SearchRepositoryTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
         
-        guard let data = getMockData(name: "search_repositories") else {
-            fatalError("Mock data not found.")
-        }
-        SearchRepository.shared.provider = MoyaProvider<SearchTarget>(
-            endpointClosure: { target in
-                let url = target.baseURL.appendingPathComponent(target.path).absoluteString
-                switch target {
-                case .searchRepo:
-                    return Endpoint(
-                        url: url,
-                        sampleResponseClosure: {
-                            .networkResponse(200, data)
-                        },
-                        method: target.method,
-                        task: target.task,
-                        httpHeaderFields:
-                        target.headers
-                    )
-                }
-            },
-            stubClosure: {
-                switch $0 {
-                case .searchRepo:
-                    return .immediate
-                }
-            },
-            plugins: [
-                NetworkLoggerPlugin.init(configuration: .init(logOptions: .verbose))
-            ]
-        )
+        SearchRepository.shared.mock()
     }
 
     override class func tearDown() {

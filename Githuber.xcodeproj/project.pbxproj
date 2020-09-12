@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B319F2DE39A8C39CCE82430 /* Pods_Githuber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B84369B7BC66292579FB98E0 /* Pods_Githuber.framework */; };
+		38192BACDAE34D8C6E2AA154 /* Pods_GithuberMockData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE8EB4827C468D0748F45D0 /* Pods_GithuberMockData.framework */; };
 		75B16860250885C80060F818 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1685F250885C80060F818 /* AppDelegate.swift */; };
 		75B16864250885C80060F818 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B16863250885C80060F818 /* ViewController.swift */; };
 		75B16867250885C80060F818 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75B16865250885C80060F818 /* Main.storyboard */; };
@@ -23,7 +24,15 @@
 		A854A17D7D60DD9D30FBC321 /* Pods_GithuberTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF4464FCF28FA41BC748211 /* Pods_GithuberTests.framework */; };
 		BB6DABF8250A3101000D7948 /* SearchRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6DABF7250A3101000D7948 /* SearchRepositoryTests.swift */; };
 		BB6DABFB250A36B8000D7948 /* search_repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = BB6DABFA250A36B8000D7948 /* search_repositories.json */; };
-		BB6DABFE250A4AC9000D7948 /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6DABFD250A4AC9000D7948 /* Stub.swift */; };
+		BB78D652250A5358004D2507 /* SearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78D651250A5358004D2507 /* SearchUITests.swift */; };
+		BB78D66F250A7520004D2507 /* GithuberMockData.h in Headers */ = {isa = PBXBuildFile; fileRef = BB78D66D250A7520004D2507 /* GithuberMockData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB78D672250A7520004D2507 /* GithuberMockData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB78D66B250A7520004D2507 /* GithuberMockData.framework */; };
+		BB78D673250A7520004D2507 /* GithuberMockData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB78D66B250A7520004D2507 /* GithuberMockData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BB78D67D250A75BE004D2507 /* SearchTargetMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78D67C250A75BE004D2507 /* SearchTargetMockData.swift */; };
+		BB78D67F250A760B004D2507 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78D67E250A760B004D2507 /* MockData.swift */; };
+		BB78D680250A7991004D2507 /* search_repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = BB6DABFA250A36B8000D7948 /* search_repositories.json */; };
+		BB78D683250A7A5A004D2507 /* MoyaProvider+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78D682250A7A5A004D2507 /* MoyaProvider+Mock.swift */; };
+		BB78D686250A7F27004D2507 /* XCUIApplication+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78D685250A7F27004D2507 /* XCUIApplication+Mock.swift */; };
 		BBD89FCE2508F6D100D19E07 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD89FCD2508F6D100D19E07 /* SearchViewController.swift */; };
 		BBD89FD02508F6D900D19E07 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD89FCF2508F6D900D19E07 /* SearchViewModel.swift */; };
 		BBD89FD32508F89600D19E07 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD89FD22508F89600D19E07 /* UIView+Extension.swift */; };
@@ -63,10 +72,33 @@
 			remoteGlobalIDString = 75B1685B250885C80060F818;
 			remoteInfo = Githuber;
 		};
+		BB78D670250A7520004D2507 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75B16854250885C80060F818 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB78D66A250A7520004D2507;
+			remoteInfo = GithuberMockData;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BB78D674250A7520004D2507 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BB78D673250A7520004D2507 /* GithuberMockData.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		31602EEDADB073AF775924C6 /* Pods-GithuberMockData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithuberMockData.release.xcconfig"; path = "Target Support Files/Pods-GithuberMockData/Pods-GithuberMockData.release.xcconfig"; sourceTree = "<group>"; };
 		4809F7088EE9825762E622E1 /* Pods-GithuberTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithuberTests.debug.xcconfig"; path = "Target Support Files/Pods-GithuberTests/Pods-GithuberTests.debug.xcconfig"; sourceTree = "<group>"; };
+		70411E9496DB9D4E4B57125E /* Pods-GithuberMockData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithuberMockData.debug.xcconfig"; path = "Target Support Files/Pods-GithuberMockData/Pods-GithuberMockData.debug.xcconfig"; sourceTree = "<group>"; };
 		75B1685C250885C80060F818 /* Githuber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Githuber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B1685F250885C80060F818 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75B16863250885C80060F818 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,10 +117,18 @@
 		75B1689925088DA30060F818 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
 		75B1689B25088E170060F818 /* SearchFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlow.swift; sourceTree = "<group>"; };
 		75B1689D25088EC20060F818 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		8EE8EB4827C468D0748F45D0 /* Pods_GithuberMockData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithuberMockData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B84369B7BC66292579FB98E0 /* Pods_Githuber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Githuber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB6DABF7250A3101000D7948 /* SearchRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryTests.swift; sourceTree = "<group>"; };
 		BB6DABFA250A36B8000D7948 /* search_repositories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = search_repositories.json; sourceTree = "<group>"; };
-		BB6DABFD250A4AC9000D7948 /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
+		BB78D651250A5358004D2507 /* SearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUITests.swift; sourceTree = "<group>"; };
+		BB78D66B250A7520004D2507 /* GithuberMockData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GithuberMockData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB78D66D250A7520004D2507 /* GithuberMockData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GithuberMockData.h; sourceTree = "<group>"; };
+		BB78D66E250A7520004D2507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB78D67C250A75BE004D2507 /* SearchTargetMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTargetMockData.swift; sourceTree = "<group>"; };
+		BB78D67E250A760B004D2507 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		BB78D682250A7A5A004D2507 /* MoyaProvider+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Mock.swift"; sourceTree = "<group>"; };
+		BB78D685250A7F27004D2507 /* XCUIApplication+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIApplication+Mock.swift"; sourceTree = "<group>"; };
 		BBD89FCD2508F6D100D19E07 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		BBD89FCF2508F6D900D19E07 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		BBD89FD22508F89600D19E07 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
@@ -122,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB78D672250A7520004D2507 /* GithuberMockData.framework in Frameworks */,
 				1B319F2DE39A8C39CCE82430 /* Pods_Githuber.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +182,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB78D668250A7520004D2507 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38192BACDAE34D8C6E2AA154 /* Pods_GithuberMockData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -151,6 +200,8 @@
 				F0D20238749A1D2EBCD737EA /* Pods-Githuber.release.xcconfig */,
 				4809F7088EE9825762E622E1 /* Pods-GithuberTests.debug.xcconfig */,
 				E42CD2259901F6AD382A1E30 /* Pods-GithuberTests.release.xcconfig */,
+				70411E9496DB9D4E4B57125E /* Pods-GithuberMockData.debug.xcconfig */,
+				31602EEDADB073AF775924C6 /* Pods-GithuberMockData.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -160,6 +211,7 @@
 			children = (
 				B84369B7BC66292579FB98E0 /* Pods_Githuber.framework */,
 				EBF4464FCF28FA41BC748211 /* Pods_GithuberTests.framework */,
+				8EE8EB4827C468D0748F45D0 /* Pods_GithuberMockData.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -170,6 +222,7 @@
 				75B1685E250885C80060F818 /* Githuber */,
 				75B16875250885CA0060F818 /* GithuberTests */,
 				75B16880250885CA0060F818 /* GithuberUITests */,
+				BB78D66C250A7520004D2507 /* GithuberMockData */,
 				75B1685D250885C80060F818 /* Products */,
 				06567586930AD46EC6917FA5 /* Pods */,
 				6220665F39C09A7DCB952784 /* Frameworks */,
@@ -182,6 +235,7 @@
 				75B1685C250885C80060F818 /* Githuber.app */,
 				75B16872250885CA0060F818 /* GithuberTests.xctest */,
 				75B1687D250885CA0060F818 /* GithuberUITests.xctest */,
+				BB78D66B250A7520004D2507 /* GithuberMockData.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -212,8 +266,6 @@
 		75B16875250885CA0060F818 /* GithuberTests */ = {
 			isa = PBXGroup;
 			children = (
-				BB6DABFC250A4AB7000D7948 /* Library */,
-				BB6DABF9250A3642000D7948 /* MockData */,
 				BB6DABF6250A30E6000D7948 /* Repository */,
 				75B16878250885CA0060F818 /* Info.plist */,
 			);
@@ -223,6 +275,8 @@
 		75B16880250885CA0060F818 /* GithuberUITests */ = {
 			isa = PBXGroup;
 			children = (
+				BB78D684250A7EB6004D2507 /* Library */,
+				BB78D653250A535E004D2507 /* Controller */,
 				75B16881250885CA0060F818 /* GithuberUITests.swift */,
 				75B16883250885CA0060F818 /* Info.plist */,
 			);
@@ -258,18 +312,55 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
-		BB6DABF9250A3642000D7948 /* MockData */ = {
+		BB78D653250A535E004D2507 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BB78D651250A5358004D2507 /* SearchUITests.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BB78D66C250A7520004D2507 /* GithuberMockData */ = {
+			isa = PBXGroup;
+			children = (
+				BB78D681250A7A43004D2507 /* Library */,
+				BB78D67B250A7587004D2507 /* MockData */,
+				BB78D678250A7539004D2507 /* JSON */,
+				BB78D66D250A7520004D2507 /* GithuberMockData.h */,
+				BB78D66E250A7520004D2507 /* Info.plist */,
+			);
+			path = GithuberMockData;
+			sourceTree = "<group>";
+		};
+		BB78D678250A7539004D2507 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
 				BB6DABFA250A36B8000D7948 /* search_repositories.json */,
 			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		BB78D67B250A7587004D2507 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				BB78D67C250A75BE004D2507 /* SearchTargetMockData.swift */,
+			);
 			path = MockData;
 			sourceTree = "<group>";
 		};
-		BB6DABFC250A4AB7000D7948 /* Library */ = {
+		BB78D681250A7A43004D2507 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				BB6DABFD250A4AC9000D7948 /* Stub.swift */,
+				BB78D67E250A760B004D2507 /* MockData.swift */,
+				BB78D682250A7A5A004D2507 /* MoyaProvider+Mock.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		BB78D684250A7EB6004D2507 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				BB78D685250A7F27004D2507 /* XCUIApplication+Mock.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -329,6 +420,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		BB78D666250A7520004D2507 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB78D66F250A7520004D2507 /* GithuberMockData.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		75B1685B250885C80060F818 /* Githuber */ = {
 			isa = PBXNativeTarget;
@@ -340,10 +442,12 @@
 				75B16859250885C80060F818 /* Frameworks */,
 				75B1685A250885C80060F818 /* Resources */,
 				9D18CD537404ED92866FBB7E /* [CP] Embed Pods Frameworks */,
+				BB78D674250A7520004D2507 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BB78D671250A7520004D2507 /* PBXTargetDependency */,
 			);
 			name = Githuber;
 			productName = Githuber;
@@ -388,6 +492,25 @@
 			productReference = 75B1687D250885CA0060F818 /* GithuberUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		BB78D66A250A7520004D2507 /* GithuberMockData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB78D677250A7520004D2507 /* Build configuration list for PBXNativeTarget "GithuberMockData" */;
+			buildPhases = (
+				11AB27EC5B6F534DDC31D920 /* [CP] Check Pods Manifest.lock */,
+				BB78D666250A7520004D2507 /* Headers */,
+				BB78D667250A7520004D2507 /* Sources */,
+				BB78D668250A7520004D2507 /* Frameworks */,
+				BB78D669250A7520004D2507 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GithuberMockData;
+			productName = GithuberMockData;
+			productReference = BB78D66B250A7520004D2507 /* GithuberMockData.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -409,6 +532,10 @@
 						CreatedOnToolsVersion = 11.7;
 						TestTargetID = 75B1685B250885C80060F818;
 					};
+					BB78D66A250A7520004D2507 = {
+						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
+					};
 				};
 			};
 			buildConfigurationList = 75B16857250885C80060F818 /* Build configuration list for PBXProject "Githuber" */;
@@ -427,6 +554,7 @@
 				75B1685B250885C80060F818 /* Githuber */,
 				75B16871250885CA0060F818 /* GithuberTests */,
 				75B1687C250885CA0060F818 /* GithuberUITests */,
+				BB78D66A250A7520004D2507 /* GithuberMockData */,
 			);
 		};
 /* End PBXProject section */
@@ -458,9 +586,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB78D669250A7520004D2507 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB78D680250A7991004D2507 /* search_repositories.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		11AB27EC5B6F534DDC31D920 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GithuberMockData-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		39F4873BDAF2EC03AA0A309D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -602,7 +760,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB6DABFE250A4AC9000D7948 /* Stub.swift in Sources */,
 				BB6DABF8250A3101000D7948 /* SearchRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -611,7 +768,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB78D652250A5358004D2507 /* SearchUITests.swift in Sources */,
 				75B16882250885CA0060F818 /* GithuberUITests.swift in Sources */,
+				BB78D686250A7F27004D2507 /* XCUIApplication+Mock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB78D667250A7520004D2507 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB78D67D250A75BE004D2507 /* SearchTargetMockData.swift in Sources */,
+				BB78D67F250A760B004D2507 /* MockData.swift in Sources */,
+				BB78D683250A7A5A004D2507 /* MoyaProvider+Mock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,6 +796,11 @@
 			isa = PBXTargetDependency;
 			target = 75B1685B250885C80060F818 /* Githuber */;
 			targetProxy = 75B1687E250885CA0060F818 /* PBXContainerItemProxy */;
+		};
+		BB78D671250A7520004D2507 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB78D66A250A7520004D2507 /* GithuberMockData */;
+			targetProxy = BB78D670250A7520004D2507 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -888,6 +1062,65 @@
 			};
 			name = Release;
 		};
+		BB78D675250A7520004D2507 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70411E9496DB9D4E4B57125E /* Pods-GithuberMockData.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GithuberMockData/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.mushare.GithuberMockData;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BB78D676250A7520004D2507 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31602EEDADB073AF775924C6 /* Pods-GithuberMockData.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GithuberMockData/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.mushare.GithuberMockData;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -923,6 +1156,15 @@
 			buildConfigurations = (
 				75B1688D250885CA0060F818 /* Debug */,
 				75B1688E250885CA0060F818 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB78D677250A7520004D2507 /* Build configuration list for PBXNativeTarget "GithuberMockData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB78D675250A7520004D2507 /* Debug */,
+				BB78D676250A7520004D2507 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

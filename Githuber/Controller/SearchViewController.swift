@@ -10,11 +10,19 @@ import RxSwift
 
 final class SearchViewController: BaseViewController<SearchViewModel> {
     
-    private lazy var searchBar = UISearchBar()
+    private lazy var searchBar: UISearchBar = {
+        let searchBar = UISearchBar()
+        searchBar.placeholder = R.string.localizable.search_bar_placeholder()
+        searchBar.rx.searchButtonClicked.bind { [unowned self] in
+            self.viewModel.search()
+        }.disposed(by: disposeBag)
+        return searchBar
+    }()
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.hideFooterView()
+        tableView.keyboardDismissMode = .interactive
         tableView.rowHeight = UITableView.automaticDimension
         tableView.register(cellType: RepositoryItemTableViewCell.self)
         tableView.rx.itemSelected.bind { [unowned self] in
@@ -25,12 +33,6 @@ final class SearchViewController: BaseViewController<SearchViewModel> {
     }()
     
     private lazy var dataSource = RepositoryItemTableViewCell.tableViewSingleSectionDataSource()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        viewModel.observeKeyword()
-    }
     
     override func subviews() -> [UIView] {
         return [

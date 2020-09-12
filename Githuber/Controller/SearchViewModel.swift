@@ -20,18 +20,6 @@ final class SearchViewModel: BaseViewModel {
         
     }
     
-    func observeKeyword() {
-        keywordRelay
-            .compactMap { $0 }
-            .filter { !$0.isEmpty }
-            .distinctUntilChanged().debug()
-            .throttle(.seconds(1), scheduler: MainScheduler.instance)
-            .flatMapLatest { SearchManager.shared.searchRepo(keyword: $0) }.debug()
-            .asDriver(onErrorJustReturn: [])
-            .drive(repositoryItems)
-            .disposed(by: disposeBag)
-    }
-    
     var title: Observable<String> {
         .just("Search Repo")
     }
@@ -44,6 +32,16 @@ final class SearchViewModel: BaseViewModel {
         repositoryItems.map {
             SingleSection.create($0)
         }
+    }
+    
+    func search() {
+        guard let keyword = keywordRelay.value, !keyword.isEmpty else {
+            return
+        }
+        SearchManager.shared.searchRepo(keyword: keyword)
+            .asDriver(onErrorJustReturn: [])
+            .drive(repositoryItems)
+            .disposed(by: disposeBag)
     }
     
     func pick(at index: Int) {
