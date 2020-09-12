@@ -20,7 +20,7 @@ platform :ios do
     cocoapods(repo_update: true)
   end
 
-    lane :test do
-    run_tests(scheme: "GithuberTests")
+  lane :test do
+    scan
   end
 end

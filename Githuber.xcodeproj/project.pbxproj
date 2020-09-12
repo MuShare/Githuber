@@ -944,7 +944,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FAE1DCF05117B0F6021067C9 /* Pods-Githuber.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Githuber/Info.plist;
@@ -964,7 +964,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F0D20238749A1D2EBCD737EA /* Pods-Githuber.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Githuber/Info.plist;
