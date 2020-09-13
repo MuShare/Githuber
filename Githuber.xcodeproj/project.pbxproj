@@ -10,12 +10,9 @@
 		1B319F2DE39A8C39CCE82430 /* Pods_Githuber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B84369B7BC66292579FB98E0 /* Pods_Githuber.framework */; };
 		38192BACDAE34D8C6E2AA154 /* Pods_GithuberMockData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE8EB4827C468D0748F45D0 /* Pods_GithuberMockData.framework */; };
 		75B16860250885C80060F818 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1685F250885C80060F818 /* AppDelegate.swift */; };
-		75B16864250885C80060F818 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B16863250885C80060F818 /* ViewController.swift */; };
-		75B16867250885C80060F818 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75B16865250885C80060F818 /* Main.storyboard */; };
 		75B16869250885CA0060F818 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75B16868250885CA0060F818 /* Assets.xcassets */; };
 		75B1686C250885CA0060F818 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75B1686A250885CA0060F818 /* LaunchScreen.storyboard */; };
 		75B16882250885CA0060F818 /* GithuberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B16881250885CA0060F818 /* GithuberUITests.swift */; };
-		75B16890250886DA0060F818 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1688F250886DA0060F818 /* ViewController2.swift */; };
 		75B1689625088D050060F818 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1689525088D050060F818 /* BaseViewController.swift */; };
 		75B1689825088D730060F818 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1689725088D730060F818 /* BaseViewModel.swift */; };
 		75B1689A25088DA30060F818 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B1689925088DA30060F818 /* AppFlow.swift */; };
@@ -101,8 +98,6 @@
 		70411E9496DB9D4E4B57125E /* Pods-GithuberMockData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithuberMockData.debug.xcconfig"; path = "Target Support Files/Pods-GithuberMockData/Pods-GithuberMockData.debug.xcconfig"; sourceTree = "<group>"; };
 		75B1685C250885C80060F818 /* Githuber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Githuber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B1685F250885C80060F818 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		75B16863250885C80060F818 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		75B16866250885C80060F818 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75B16868250885CA0060F818 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75B1686B250885CA0060F818 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75B1686D250885CA0060F818 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,7 +106,6 @@
 		75B1687D250885CA0060F818 /* GithuberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithuberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B16881250885CA0060F818 /* GithuberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithuberUITests.swift; sourceTree = "<group>"; };
 		75B16883250885CA0060F818 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75B1688F250886DA0060F818 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		75B1689525088D050060F818 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		75B1689725088D730060F818 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		75B1689925088DA30060F818 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
@@ -251,9 +245,6 @@
 				75B1689425088CA70060F818 /* Library */,
 				75B1689225088C8F0060F818 /* Flow */,
 				75B1685F250885C80060F818 /* AppDelegate.swift */,
-				75B16863250885C80060F818 /* ViewController.swift */,
-				75B1688F250886DA0060F818 /* ViewController2.swift */,
-				75B16865250885C80060F818 /* Main.storyboard */,
 				75B16868250885CA0060F818 /* Assets.xcassets */,
 				75B1686A250885CA0060F818 /* LaunchScreen.storyboard */,
 				75B1686D250885CA0060F818 /* Info.plist */,
@@ -567,7 +558,6 @@
 				75B1686C250885CA0060F818 /* LaunchScreen.storyboard in Resources */,
 				BBD89FFD2509264900D19E07 /* Localizable.strings in Resources */,
 				75B16869250885CA0060F818 /* Assets.xcassets in Resources */,
-				75B16867250885C80060F818 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -736,11 +726,9 @@
 				BBD89FF02509180800D19E07 /* RepositoryViewModel.swift in Sources */,
 				BBD89FEA25090AD700D19E07 /* MoyaProvider+Extension.swift in Sources */,
 				BBD89FFB250924EC00D19E07 /* R.generated.swift in Sources */,
-				75B16864250885C80060F818 /* ViewController.swift in Sources */,
 				BBD89FDB2508FE8100D19E07 /* RepositoryItem.swift in Sources */,
 				BBD89FE82509066000D19E07 /* RepositoryItemTableViewCell.swift in Sources */,
 				BBD89FD32508F89600D19E07 /* UIView+Extension.swift in Sources */,
-				75B16890250886DA0060F818 /* ViewController2.swift in Sources */,
 				75B16860250885C80060F818 /* AppDelegate.swift in Sources */,
 				BBD89FE32509005900D19E07 /* BaseRepository.swift in Sources */,
 				BBD89FD92508FE6000D19E07 /* SearchRepositoriesResponse.swift in Sources */,
@@ -805,14 +793,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		75B16865250885C80060F818 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				75B16866250885C80060F818 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		75B1686A250885CA0060F818 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
